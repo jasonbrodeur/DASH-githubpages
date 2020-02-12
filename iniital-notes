@@ -1,0 +1,62 @@
+# Introduction
+
+# Pre-event prepartion
+
+## Step 0.1: Install git version control software
+- Navigate to the [official git website](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) and follow the instructions to download and install for your operating system.
+  - For Windows, use [this download link](https://git-scm.com/download/win) and install using all of the default (recommended) options.
+
+## Step 0.2: Create a GitHub account (if you don't have one)
+- Navigate to [Github](https://github.com) and sign up for an account if you don't already have one. 
+- After registering, sign in to your account.
+- Watch the short introductory video[What is GitHub?](https://www.youtube.com/watch?v=w3jLJU7DT5E).
+
+## Step 0.3: Install and configure GitHub Desktop
+- If using a Windows or Mac, download and install [GitHub Desktop](https://desktop.github.com/)
+  - More guidance can be found in guides from [GitHub](https://help.github.com/en/desktop/getting-started-with-github-desktop) and [TechRepublic](https://www.techrepublic.com/article/how-to-install-github-desktop/).
+  - Sign into GitHub Desktop using your GitHub credentials
+  - In the *Configure Git* page, enter the name and email address that you want associated with your changes
+  - In File > Options > Advanced, set the Shell to Git Bash
+- (optional) Once configured, the main GitHub Desktop page will show any repositories that exist in your GitHub account. For those who use git already, you can add any local repositories that already exist on your machine.
+
+# In-Class Activity
+
+## Introduction
+
+Follow along with the [introductory slides](https://docs.google.com/presentation/d/e/2PACX-1vSjyUEk9jOYf-5aYJUT898qN1qxw7Wohn-kOoniaOgfy6GhPRpMB6abZJhIzAUnB0eh0NBa9N4Dh82f/pub?start=false&loop=false&delayms=60000). 
+
+Presentations slides
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSjyUEk9jOYf-5aYJUT898qN1qxw7Wohn-kOoniaOgfy6GhPRpMB6abZJhIzAUnB0eh0NBa9N4Dh82f/embed?start=false&loop=false&delayms=3000" frameborder="0" width="1280" height="749" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+## D. An introduction to Markdown
+### D1. What is Markdown? 
+Borrowed shamelessly from Github's [Mastering Markdown](https://guides.github.com/features/mastering-markdown/) page: 
+> Markdown is a way to style text on the web. You control the display of the document; formatting words as bold or italic, adding images, and creating lists are just a few of the things we can do with Markdown. Mostly, Markdown is just regular text with a few non-alphabetic characters thrown in, like # or *.
+
+Markdown uses simple notation to apply simple formatting rules. Since it's pretty much just plain text, it's transferrable and much simpler than marked-up text like HTML or even Word or Google documents. For much of the writing that you do for the web, Markdown is good enough. Github uses Markdown for its documents (this document was created in markdown), as does a variety of other web platforms (Trello, for example). 
+
+Using Markdown in Github lets you create readme files that can use better formatting than a plain text file, but is still readable as plain text -- it's the best of both worlds. 
+
+### D2. Get familiar with Markdown
+1. Using the Github web interface, add some content to your newly-created **readme.md** document. Use the [Mastering Markdown guide](https://guides.github.com/features/mastering-markdown/) as a reference (or other guides on the web) to create a fictional document that contains the following elements: 
+- Headings of a number of different levels
+- bolded, italicized text 
+- insert an image from the web
+- insert an image that is hosted in your GitHub repository
+- An ordered list
+- A bulleted list
+- A link to another website 
+- A table
+- And finally, an emoji! 
+2. Commit your changes and enjoy the products of your hard work!
+
+### More information and references for Markdown:
+- [Mastering Markdown](https://guides.github.com/features/mastering-markdown/) 
+- [Adam Pritchard's Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+- [Daring Fireball's Markdown Introduction](https://daringfireball.net/projects/markdown/)
+
+
+## 3. 
+- From your GitHub main page, click on the green "New Repository" button. This is the repository (storage location) where the content of your website will be hosted. 
+  - Provide a name for your repository. This will determine the URL of your repository. i.e. https://github.com/<your-github-username>/<your-repo-name>
+  
