@@ -28,6 +28,74 @@ Follow along with the [introductory slides](https://docs.google.com/presentation
 Presentations slides
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSjyUEk9jOYf-5aYJUT898qN1qxw7Wohn-kOoniaOgfy6GhPRpMB6abZJhIzAUnB0eh0NBa9N4Dh82f/embed?start=false&loop=false&delayms=3000" frameborder="0" width="1280" height="749" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
+## Introduction
+Follow along with the [introductory slides](https://docs.google.com/presentation/d/e/2PACX-1vRBTYQtYBdfn6CyA5Io-_UNdUNg-gN7yY8SOKESKpLOnhF2JsKyLJoslYBernz8OVcxtqpxRWi3iuRa/pub?start=false&loop=false&delayms=60000). 
+
+During today's workshop, you will accomplish the following tasks:  
+- Use GitHub to fork someone else’s project into your own GitHub repository
+- Use GitHub Desktop (GHD) and git to clone your repository to your local computer
+- Use Openrefine to clean some messy data, and edit the contents of your local repository (by exporting a processing script and refined data products to your working folder)
+- Add and commit your changes to your local git repository
+- Push your changes from your local computer to your GitHub repository using GHD
+- Edit content (i.e. Markdown files) using the GitHub web interface
+- Pull new changes back to your local repository
+- Initiate a ‘pull request’ to the original project repository
+
+![flowchart of workshop activities](https://github.com/data-curation/cdcf-workshop2A/blob/master/docs/Overview.png?raw=true)
+
+## For Windows and Mac users
+
+### Step 1.1: Fork a GitHub repository
+In this step, you will 'fork' an existing (original) GitHub repository (belonging to someone else) to create a branch repository in your GitHub account. This allows you to create a copy of the original repository that you can modify as desired...and perhaps, allow your changes to be merged back 'upstream' to the original repository. 
+
+- Ensure that you are logged into your GitHub account.
+- Navigate to the workshop GitHub repository [https://github.com/data-curation/cdcf-workshop2A](https://github.com/data-curation/cdcf-workshop2A). 
+- Click the **Fork** button at the top of the repository--this will "fork" the repository and create a branch in your GitHub account. By default, it will use a similar URL naming convention to the original (i.e. https://github.com/<yourUsername>/cdcf-workshop2A).
+
+### Step 1.2: Clone to your local computer
+In this next step, you will 'clone' your GitHub repository to your local computer so that you can work on files locally. 
+- **In GitHub Desktop**, your newly forked repository should appear in the **Your repositories** list (You may need to refresh the list for it to show). 
+  - **NOTE:** If it doesn't appear, double-check that the repository exists in your GitHub profile. If it does exist, you can copy the repository URL from GitHub and paste it into the appropriate place using the "Clone a repository from the Internet" button on GitHub Desktop.
+- Highlight your repository in the list and click "Clone <*repository name*>". Select the local path where you would like to download the repository--a new folder will be created with the name of the repository. 
+
+### Step 1.3: Do things in Openrefine!
+- Once you've cloned the repository, use the button on GitHub Desktop to view the repository/files in Explorer. 
+- Proceed with the [Data Carpentries Openrefine lesson](https://datacarpentry.org/openrefine-socialsci/01-introduction/index.html), using the downloaded data.
+
+### Step 1.4: Export/Save modified data and processing script from Openrefine 
+- Be sure to save all exported products (processing script, tar.gz project file, csv file) in the folder you cloned in Step 2.
+
+### Step 1.5: Add and commit new files and changes to your local repository
+- Maximize (or reopen) GitHub Desktop and open the local repository for this workshop (\cdcf-workshop2A). 
+- The modified files will appear in the left-hand pane. Clicking on any of these files will display changes in the main pane.
+- To commit changes, add a short summary (e.g. "outputs from OpenRefine workshop") and a further description of contents and activities (if desired). Click **Commit to master**.  
+
+### Step 1.6: Push changes to your GitHub repository
+- The repository overview page in GitHub Desktop will now display a new message: **Push 1 commit to the origin remote**. Click to push changes to the origin remote in GitHub. 
+
+### Step 1.7: View and edit your readme file in the GitHub Editor
+- Once your changes have been pushed to your remote (GitHub) repository, use your web browser to navigate to your GitHub repository. Confirm that the new files have been added to the repository along with the timestamp and summary from the commit.
+- Explore the files in your GitHub repository. View the exported csv file, which will be presented in a formatted table. 
+- View the README.md file and open it up for editing by clicking the pencil icon (*"Edit this file"*)
+  - The README file is written in [Markdown](), a lightweight markup language that allows you to use plain text and a few special characters to create formatted text. 
+  - More information and references for Markdown:
+    - [Mastering Markdown](https://guides.github.com/features/mastering-markdown/) 
+    - [Adam Pritchard's Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+    - [Daring Fireball's Markdown Introduction](https://daringfireball.net/projects/markdown/)
+- Edit the readme file to include pertinent information about the repository's creation, its contents, and sharing information. An empty template has been created for you from Cornell University's [Guide to writing "readme" style metadata](https://data.research.cornell.edu/content/readme). Click the **Preview changes** tab to see how the Markdown will render on the web.
+- When finished editing, scroll to the bottom of the page, add a Summary and Description and commit changes to the master branch.
+
+### Step 1.8: Pull GitHub changes to your local repository
+- Maximize GitHub Desktop and click "Fetch origin" near the top of the window. A new prompt should appear to *"Pull 1 commit from the origin remote"*. Click **Pull origin** to incorporate the changes into your local repository. 
+- Inspect the changes to your local repository.
+
+### Step 1.9: Make a Pull Request to the original repository
+On occasion, you may want to ask the maintainer of an 'upstream' branch to incorporate your changes. This can be done by making a **Pull request**
+- From the top-level page of your GitHub repository (i.e. /cdcf-workshop2A), click on **New pull request**. You'll be taken to a page that compares the differences between the two repositories. Review the suggested changes and click **Create pull request**. 
+- Add a title and leave a comment. and click **Create pull request**. 
+- Your pull request will now appear in the upstream repository's [list of requests](https://github.com/data-curation/cdcf-workshop2A/pulls). The owner of the upstream repository can now manage the merger of files (either automatically or manually).
+
+
 ## D. An introduction to Markdown
 ### D1. What is Markdown? 
 Borrowed shamelessly from Github's [Mastering Markdown](https://guides.github.com/features/mastering-markdown/) page: 
