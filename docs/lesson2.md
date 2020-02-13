@@ -6,6 +6,8 @@ title: Digging into versioning with GitHub Desktop
 
 
 # Digging into versioning with GitHub Desktop
+<br>
+<br>
 
 ## 1. Install git and GitHub Desktop software
 
