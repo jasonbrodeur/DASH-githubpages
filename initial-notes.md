@@ -91,7 +91,7 @@ Using the Github editor, open ```index.md``` for editing and add some content to
 - A link to another website 
 - A table
 - And finally, an emoji! 
-**NOTE:** Use the **Preview changes** tab to preview what you've done. 
+**NOTE:** Use the **Preview changes** tab to see (mostly) how it will look on your page. 
 
 Commit your changes and enjoy the products of your hard work!
 
@@ -100,21 +100,15 @@ More information and references for Markdown:
 - [Adam Pritchard's Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 - [Daring Fireball's Markdown Introduction](https://daringfireball.net/projects/markdown/)
 
+### Create a second page
+- Create another markdown page in the ```docs``` folder. Name it as you wish, but ensure that it ends in ```.md```.
 
+## Customizing pages | What is jekyll?
+You may have noticed by now that there is another file (```config.yml```) in your ```docs``` folder that you didn't create or put there. This is your configuration file, and it's written in a language called [YAML](https://en.wikipedia.org/wiki/YAML). The ```config.yml``` file was created at the time that you turned on GitHub pages, and it provides instructions to a static site generator software called [jekyll](https://jekyllrb.com/). GitHub pages uses jekyll in the background to convert your Markdown file(s) to formatted html to display as a webpages. 
 
-## Creating content | Customizing pages
-
-
-GitHub Pages uses static site generator software called jekyll [webpage](https://jekyllrb.com/) to generate html pages from a variety 
-
-GutHub pages uses a static site generator called jekyll [webpage](https://jekyllrb.com/) to 
-GitHub pages expects for there to be at least one default page in the docs 
-- Navigate to the ```docs``` folder of your repository
-- Note that there is now a file named **_config.yml**. This is your configuration file, and it's written in a language called [YAML](https://en.wikipedia.org/wiki/YAML). There is quite a lot that you can customize in this configuration file, but we'll leave itkeep it pretty basic for now. 
-- Right now, your 
-
-- Create index.md file 
-- Include front matter
+There is ***a lot*** that you can do with jekyll (within GitHub pages and as a standalone application on your computer) to generate customized webpages. While only the theme information is set in your file initially, there are many ways that you can [customize](https://help.github.com/en/github/working-with-github-pages/about-github-pages-and-jekyll#default-plugins)  it. Here, we'll make a few simple ones:
+- Use the GitHub editor to edit your ```config.yml``` file.
+- beneath the first (theme) line, add the following: 
 ```
 plugins:
   - jekyll-relative-links
@@ -122,19 +116,23 @@ relative_links:
   enabled: true
   collections: true
 include:
-  - pagetwo.md
+  - <the name of your page>.md
 
-title: Welcome to my webpage
+title: <your webpage title>
+description: <description of your webpage> 
 ```
-
-### Jekyll
+What this does:
+- The ```plugins``` and ```relative-links``` lines make it easier for us to refer to files within our repository. 
+- The include statement is used to indicate to jekyll which other Markdown pages should be converted to html pages. 
+- The title and description statements allow you to override the repository name and description in the webpage title.
+ 
+### More about Jekyll
 From jekyllrb.com
 >“Jekyll is a static site generator. You give it text written in your favorite markup language and it uses layouts to create a static website. You can tweak how you want the site URLs to look, what data gets displayed on the site, and more.”
 
 GitHub pages uses jekyll to turn your markdown files (hosted in your GitHub repo) into html files and presents them on your desired website. 
 
-Jekyll [webpage](https://jekyllrb.com/) and Jekyll project [on GitHub](https://github.com/jekyll/jekyll)
-
+Jekyll [webpage](https://jekyllrb.com/) and Jekyll project [on GitHub](https://github.com/jekyll/jekyll).
 
 
 ## Introduction
