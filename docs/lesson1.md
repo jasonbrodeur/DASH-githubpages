@@ -15,9 +15,9 @@ Presentations slides
 
 # Create a new GitHub repository
 - From your GitHub main page, click on the green **New Repository** button. This is the repository (storage location) where the content of your website will be hosted. 
-  - Provide a name for your repository, and be sure to end it in **.github.io**. The name you enter will determine the URL of your repository. The **.github.io** part triggers GitHub Pages to treat it as a set of web pages.
-    - i.e. ```https://github.com/<your-github-username>/<your-repo-name>.github.io```
-	- e.g. ```https://github.com/jasonbrodeur/workshop-test2.github.io```
+  - Provide a name for your repository. The name you enter will determine the URL of your repository.
+    - i.e. ```https://github.com/<your-github-username>/<your-repo-name>```
+	- e.g. ```https://github.com/jasonbrodeur/DASH-githubpages```
 - Check the box to **Initialize this repository with a README**
 - Click the **Create repository** button
 - Your browser will now open to the top-level page of the repository. Your repository will contain one file: **README.md**. 
@@ -69,7 +69,15 @@ Borrowed shamelessly from Github's [Mastering Markdown](https://guides.github.co
 Markdown uses simple notation to apply simple formatting rules. Since it's pretty much just plain text, it's transferrable and much simpler than marked-up text like HTML or even Word or Google documents. It's also very readable in its plain text format, which is nice. For much of the writing that you do for the web, Markdown is good enough. Github uses Markdown for its documents (this document was created in markdown), as does a variety of other web platforms (Reddit and Trello, as examples). 
 
 ## Edit index.md
-Using the Github editor, open ```index.md``` for editing and add some content to it. Use the [Mastering Markdown guide](https://guides.github.com/features/mastering-markdown/) as a reference (or other guides on the web) to create a fictional document that contains most of the following elements: 
+Using the Github editor, open ```index.md``` for editing and add some content to it. If you would like to add a title to your page, add the following text at the top:
+
+```
+---
+title: <enter your title here>
+---
+```
+
+Use the [Mastering Markdown guide](https://guides.github.com/features/mastering-markdown/) as a reference (or other guides on the web) to create a fictional document that contains most of the following elements: 
 - Headings of a number of different levels
 - bolded, italicized text 
 - insert an image from the web
@@ -89,7 +97,7 @@ More information and references for Markdown:
 - [Daring Fireball's Markdown Introduction](https://daringfireball.net/projects/markdown/)
 
 ## Create a second page
-- Create another markdown page in the ```docs``` folder. Name it as you wish, but ensure that it ends in ```.md```.
+- Create another markdown page in the ```docs``` folder. Name it as you wish, but ensure that it ends in ```.md```. Add a title and other elements as done earlier. 
 
 # Customizing pages | What is jekyll?
 You may have noticed by now that there is another file (```config.yml```) in your ```docs``` folder that you didn't create or put there. This is your configuration file, and it's written in a language called [YAML](https://en.wikipedia.org/wiki/YAML). The ```config.yml``` file was created at the time that you turned on GitHub pages, and it provides instructions to a static site generator software called [jekyll](https://jekyllrb.com/). GitHub pages uses jekyll in the background to convert your Markdown file(s) to formatted html to display as a webpages. 
