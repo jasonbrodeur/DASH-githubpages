@@ -5,7 +5,7 @@ relative_links:
   enabled: true
   collections: true
 include:
-  - <the name of your page>.md
+  - instructions.md
 
-title: <your webpage title>
-description: <description of your webpage> 
+title: Easy websites with GitHub Pages and Markdown
+description: Jay Brodeur | DASH Workshop | 13-February, 2020
