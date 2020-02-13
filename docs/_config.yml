@@ -1,1 +1,11 @@
 theme: jekyll-theme-midnight
+plugins:
+  - jekyll-relative-links
+relative_links:
+  enabled: true
+  collections: true
+include:
+  - <the name of your page>.md
+
+title: <your webpage title>
+description: <description of your webpage> 
