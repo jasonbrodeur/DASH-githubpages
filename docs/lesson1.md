@@ -2,7 +2,7 @@
 title: GitHub Pages | Learning Markdown
 ---
 
-##[BACK TO MAIN PAGE](index.md)
+[#BACK TO MAIN PAGE](index.md)
 
 # Introduction
 
