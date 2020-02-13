@@ -20,49 +20,98 @@ https://www.smashingmagazine.com/2014/08/build-blog-jekyll-github-pages/
 - (optional) Once configured, the main GitHub Desktop page will show any repositories that exist in your GitHub account. For those who use git already, you can add any local repositories that already exist on your machine.
 
 # In-Class Activity
+
+## Create a GitHub account
 - Navigate to [Github](https://github.com) and sign up for an account if you don't already have one. 
 - After registering, sign in to your account.
 
-## 3. 
+## Create a new GitHub repository
 - From your GitHub main page, click on the green **New Repository** button. This is the repository (storage location) where the content of your website will be hosted. 
-  - Provide a name for your repository. This will determine the URL of your repository. i.e. https://github.com/<your-github-username>/<your-repo-name>
+  - Provide a name for your repository, and be sure to end it in **.github.io**. The name you enter will determine the URL of your repository. The **.github.io** part triggers GitHub Pages to treat it as a set of web pages.
+    - i.e. ```https://github.com/<your-github-username>/<your-repo-name>.github.io```
+	- e.g. ```https://github.com/jasonbrodeur/workshop-test2.github.io```
 - Check the box to **Initialize this repository with a README**
 - Click the **Create repository** button
 - Your browser will now open to the top-level page of the repository. Your repository will contain one file: **README.md**. 
-  - Click on the **README.md** file to open it in the file viewer page
-  - On the file viewer page, click the edit button (pencil icon) to switch to editing mode
-  - Add a bit of information to the README file that explains what this repository is for, and who created it. 
-  - When finished editing, scroll to the bottom of the page to the **Commit changes** box. 
-	- The **Commit changes** box is used to record information about changes before you commit them. 
-	  - (optional) If interested, modify the comment from **Update README.md** to something more descriptive
-	  - (optional) Add a description, if desired
-	- Click the **Commit changes** box to finalize your commit. Your changes will be represented in the README file. 
-Viewing changes
-- In the README file viewing page, explore the Blame and History buttons to better understand how GitHub keeps track of file changes. 
-Creating a folder
-- Next, we want to create a folder named **docs** in the top level of the repository. This is where the webpage content will be created. 
-  - In the top-level repository page, click **Create new file**
-    - NOTE1: To create a file, simply enter the name (with extension). 
-	- NOTE2: To create a folder, you need to add a trailing slash (/) to the name, and you need to [create a file within the folder](https://github.com/KirstieJane/STEMMRoleModels/wiki/Creating-new-folders-in-GitHub-repository-via-the-browser) (empty folders aren't saved). You can always delete this file later.
-	- In the **Name your file...** box, enter **docs/foo.txt** (you can use any filename in place of foo.txt). Click **Commit change**. You will now have a folder named *docs* in your repository.
 	
+## Create new folders and files
+In this task, you'll create a folder that we'll need to initiate the webpage, and you'll learn how to create and edit files. 
+
+### Create a folder and a text file
+We want to create a folder named ```docs``` in the top level of the repository. This is where the webpage content will live. We also want to create a file in this folder called ```index.md```. This will be the home page for your website.
+- In the top-level repository page, click **Create new file**
+  - NOTE1: To create a file, simply enter the desired name and file extension. 
+  - NOTE2: To create a folder, you need to add a trailing slash (/) to the name, and you need to [create a file within the folder](https://github.com/KirstieJane/STEMMRoleModels/wiki/Creating-new-folders-in-GitHub-repository-via-the-browser), since empty folders aren't saved. You can always delete this file later.
+	- In the **Name your file...** box, enter ```docs/index.md```. Click **Commit change**. You will now have a folder named ```docs``` in your repository with a file named ```index.md```.
+	
+### Edit your text file
+- Click on the ```index.md``` file to open it in the file viewer page
+  - On the file viewer page, click the edit button (pencil icon) to switch to editing mode
+  - Add a bit of text to this file (anything is fine). 
+  - When finished editing, scroll to the bottom of the page to the **Commit changes** box. 
+	- NOTE: The **Commit changes** box is used to record information about changes before you commit them. 
+	  - (optional) If interested, modify the comment from **Update index.md** to something more descriptive
+	  - (optional) Add a description, if desired
+	- Click the **Commit changes** box to finalize your commit. Your changes will be represented in the file. 
+
+### Viewing changes
+- In the **index.md** file viewing page, explore the *Blame* and *History* buttons to better understand how GitHub keeps track of file changes. 
 
 
-### Exploring Features and Settings | Creating webpages
+## Exploring Features and Settings | Preparing the webpage
 In this step, we'll explore some of the functionality available in a GitHub repository and show you how to get started with [GitHub Pages](https://help.github.com/en/github/working-with-github-pages/about-github-pages)
-- Ensure that you created the **docs** folder, as outlined in the previous step.
+- Ensure that you've created the ```docs``` folder and the ```index.md``` file, as outlined in the previous step.
 - Explore with Jay the various Features (tabs) that are available within a repository
 - Open the Settings Tab. Follow along with Jay as he explains the various pages
 - On the (topmost) **Options** page, scroll down to the **GitHub Pages** section
-  - For **Source**, select `master branch /docs folder` (note you could also pick the *master branch* option)
+  - For **Source**, select **master branch /docs folder** (note you could also pick the *master branch* option, but not for this example.)
   - Click **Choose a theme** to select a theme for your webpage
-- Congratulations, your website is now live. The link will be provided in the GitHub Pages section.
-- ... however, if you click it, you'll receive a 404 error. Now we need to create some content!
+- Congratulations, your website is ready. The link will be provided in the GitHub Pages section.
+  - You may initially receive a 404 error, but after a minute, your website will appear with the content from ```index.md```
+Remember: By default, GitHub Pages expects at least one file in the ```docs``` folder named ```index.md```. This is the main (home) page for the webpage.
+**Now, we need to add some content to your webpage!**
 
-### Creating content | Customizing pages
-- Navigate to the **docs** folder of your repository
-  - Note that there is now a file named **_config.yml**. This is your configuration file, and it's written in a language called [YAML](https://en.wikipedia.org/wiki/YAML). 
+## Creating content with Markdown
+One of the really nice things about GitHub and GitHub Pages is that you can use Markdown to format text on a webpage without the use (or knowledge!) of html coding. This makes it really easy to create content. In this section, you'll learn a bit more about Markdown and how to use it to create formatted text. 
 
+### What is Markdown? 
+Borrowed shamelessly from Github's [Mastering Markdown](https://guides.github.com/features/mastering-markdown/) page: 
+> Markdown is a way to style text on the web. You control the display of the document; formatting words as bold or italic, adding images, and creating lists are just a few of the things we can do with Markdown. Mostly, Markdown is just regular text with a few non-alphabetic characters thrown in, like # or *.
+
+Markdown uses simple notation to apply simple formatting rules. Since it's pretty much just plain text, it's transferrable and much simpler than marked-up text like HTML or even Word or Google documents. It's also very readable in its plain text format, which is nice. For much of the writing that you do for the web, Markdown is good enough. Github uses Markdown for its documents (this document was created in markdown), as does a variety of other web platforms (Reddit and Trello, as examples). 
+
+### Edit index.md
+Using the Github editor, open ```index.md``` for editing and add some content to it. Use the [Mastering Markdown guide](https://guides.github.com/features/mastering-markdown/) as a reference (or other guides on the web) to create a fictional document that contains most of the following elements: 
+- Headings of a number of different levels
+- bolded, italicized text 
+- insert an image from the web
+- insert an image that is hosted in your GitHub repository
+- An ordered list
+- A bulleted list
+- A link to another website 
+- A table
+- And finally, an emoji! 
+**NOTE:** Use the **Preview changes** tab to preview what you've done. 
+
+Commit your changes and enjoy the products of your hard work!
+
+More information and references for Markdown:
+- [Mastering Markdown](https://guides.github.com/features/mastering-markdown/) 
+- [Adam Pritchard's Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+- [Daring Fireball's Markdown Introduction](https://daringfireball.net/projects/markdown/)
+
+
+
+## Creating content | Customizing pages
+
+
+GitHub Pages uses static site generator software called jekyll [webpage](https://jekyllrb.com/) to generate html pages from a variety 
+
+GutHub pages uses a static site generator called jekyll [webpage](https://jekyllrb.com/) to 
+GitHub pages expects for there to be at least one default page in the docs 
+- Navigate to the ```docs``` folder of your repository
+- Note that there is now a file named **_config.yml**. This is your configuration file, and it's written in a language called [YAML](https://en.wikipedia.org/wiki/YAML). There is quite a lot that you can customize in this configuration file, but we'll leave itkeep it pretty basic for now. 
+- Right now, your 
 
 - Create index.md file 
 - Include front matter
@@ -162,31 +211,7 @@ On occasion, you may want to ask the maintainer of an 'upstream' branch to incor
 
 
 ## D. An introduction to Markdown
-### D1. What is Markdown? 
-Borrowed shamelessly from Github's [Mastering Markdown](https://guides.github.com/features/mastering-markdown/) page: 
-> Markdown is a way to style text on the web. You control the display of the document; formatting words as bold or italic, adding images, and creating lists are just a few of the things we can do with Markdown. Mostly, Markdown is just regular text with a few non-alphabetic characters thrown in, like # or *.
 
-Markdown uses simple notation to apply simple formatting rules. Since it's pretty much just plain text, it's transferrable and much simpler than marked-up text like HTML or even Word or Google documents. For much of the writing that you do for the web, Markdown is good enough. Github uses Markdown for its documents (this document was created in markdown), as does a variety of other web platforms (Trello, for example). 
-
-Using Markdown in Github lets you create readme files that can use better formatting than a plain text file, but is still readable as plain text -- it's the best of both worlds. 
-
-### D2. Get familiar with Markdown
-1. Using the Github web interface, add some content to your newly-created **readme.md** document. Use the [Mastering Markdown guide](https://guides.github.com/features/mastering-markdown/) as a reference (or other guides on the web) to create a fictional document that contains the following elements: 
-- Headings of a number of different levels
-- bolded, italicized text 
-- insert an image from the web
-- insert an image that is hosted in your GitHub repository
-- An ordered list
-- A bulleted list
-- A link to another website 
-- A table
-- And finally, an emoji! 
-2. Commit your changes and enjoy the products of your hard work!
-
-### More information and references for Markdown:
-- [Mastering Markdown](https://guides.github.com/features/mastering-markdown/) 
-- [Adam Pritchard's Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
-- [Daring Fireball's Markdown Introduction](https://daringfireball.net/projects/markdown/)
 
 
 
