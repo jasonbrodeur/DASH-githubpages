@@ -20,6 +20,58 @@
 - (optional) Once configured, the main GitHub Desktop page will show any repositories that exist in your GitHub account. For those who use git already, you can add any local repositories that already exist on your machine.
 
 # In-Class Activity
+- Navigate to [Github](https://github.com) and sign up for an account if you don't already have one. 
+- After registering, sign in to your account.
+
+## 3. 
+- From your GitHub main page, click on the green **New Repository** button. This is the repository (storage location) where the content of your website will be hosted. 
+  - Provide a name for your repository. This will determine the URL of your repository. i.e. https://github.com/<your-github-username>/<your-repo-name>
+- Check the box to **Initialize this repository with a README**
+- Click the **Create repository** button
+- Your browser will now open to the top-level page of the repository. Your repository will contain one file: **README.md**. 
+  - Click on the **README.md** file to open it in the file viewer page
+  - On the file viewer page, click the edit button (pencil icon) to switch to editing mode
+  - Add a bit of information to the README file that explains what this repository is for, and who created it. 
+  - When finished editing, scroll to the bottom of the page to the **Commit changes** box. 
+	- The **Commit changes** box is used to record information about changes before you commit them. 
+	  - (optional) If interested, modify the comment from **Update README.md** to something more descriptive
+	  - (optional) Add a description, if desired
+	- Click the **Commit changes** box to finalize your commit. Your changes will be represented in the README file. 
+Viewing changes
+- In the README file viewing page, explore the Blame and History buttons to better understand how GitHub keeps track of file changes. 
+Creating a folder
+- Next, we want to create a folder named **docs** in the top level of the repository. This is where the webpage content will be created. 
+  - In the top-level repository page, click **Create new file**
+    - NOTE1: To create a file, simply enter the name (with extension). 
+	- NOTE2: To create a folder, you need to add a trailing slash (/) to the name, and you need to [create a file within the folder](https://github.com/KirstieJane/STEMMRoleModels/wiki/Creating-new-folders-in-GitHub-repository-via-the-browser) (empty folders aren't saved). You can always delete this file later.
+	- In the **Name your file...** box, enter **docs/foo.txt** (you can use any filename in place of foo.txt). Click **Commit change**. You will now have a folder named *docs* in your repository.
+	
+
+
+### Exploring Features and Settings | Creating webpages
+In this step, we'll explore some of the functionality available in a GitHub repository and show you how to get started with [GitHub Pages](https://help.github.com/en/github/working-with-github-pages/about-github-pages)
+- Ensure that you created the **docs** folder, as outlined in the previous step.
+- Explore with Jay the various Features (tabs) that are available within a repository
+- Open the Settings Tab. Follow along with Jay as he explains the various pages
+- On the (topmost) **Options** page, scroll down to the **GitHub Pages** section
+  - For **Source**, select **master branch /docs folder** (note you could also pick the *master branch* option)
+  - Click **Choose a theme** to select a theme for your webpage
+- Congratulations, your website is now live. The link will be provided in the GitHub Pages section.
+- ... however, if you click it, you'll receive a 404 error. Now we need to create some content!
+
+### Creating content | Customizing pages
+
+
+
+### Jekyll
+From jekyllrb.com
+>“Jekyll is a static site generator. You give it text written in your favorite markup language and it uses layouts to create a static website. You can tweak how you want the site URLs to look, what data gets displayed on the site, and more.”
+
+GitHub pages uses jekyll to turn your markdown files (hosted in your GitHub repo) into html files and presents them on your desired website. 
+
+Jekyll [webpage](https://jekyllrb.com/) and Jekyll project [on GitHub](https://github.com/jekyll/jekyll)
+
+
 
 ## Introduction
 
@@ -28,8 +80,6 @@ Follow along with the [introductory slides](https://docs.google.com/presentation
 Presentations slides
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSjyUEk9jOYf-5aYJUT898qN1qxw7Wohn-kOoniaOgfy6GhPRpMB6abZJhIzAUnB0eh0NBa9N4Dh82f/embed?start=false&loop=false&delayms=3000" frameborder="0" width="1280" height="749" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
-## Introduction
-Follow along with the [introductory slides](https://docs.google.com/presentation/d/e/2PACX-1vRBTYQtYBdfn6CyA5Io-_UNdUNg-gN7yY8SOKESKpLOnhF2JsKyLJoslYBernz8OVcxtqpxRWi3iuRa/pub?start=false&loop=false&delayms=60000). 
 
 During today's workshop, you will accomplish the following tasks:  
 - Use GitHub to fork someone else’s project into your own GitHub repository
@@ -124,9 +174,7 @@ Using Markdown in Github lets you create readme files that can use better format
 - [Daring Fireball's Markdown Introduction](https://daringfireball.net/projects/markdown/)
 
 
-## 3. 
-- From your GitHub main page, click on the green "New Repository" button. This is the repository (storage location) where the content of your website will be hosted. 
-  - Provide a name for your repository. This will determine the URL of your repository. i.e. https://github.com/<your-github-username>/<your-repo-name>
+
   
 ## For Linux users
 ### Step 1.0: Configuring your git account 
