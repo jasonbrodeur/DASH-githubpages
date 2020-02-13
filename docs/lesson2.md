@@ -2,7 +2,7 @@
 title: Digging into versioning with GitHub Desktop
 ---
 
-[#BACK TO MAIN PAGE](index.md)
+## [BACK TO MAIN PAGE](index.md)
 
 # Install git and GitHub Desktop software
 
