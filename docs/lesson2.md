@@ -1,3 +1,7 @@
+---
+title: Digging into versioning with GitHub Desktop
+---
+
 # In-Class Activity
 
 ## Introduction
