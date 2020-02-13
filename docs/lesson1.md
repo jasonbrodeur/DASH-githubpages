@@ -5,6 +5,7 @@ title: GitHub Pages | Learning Markdown
 [BACK TO MAIN PAGE](index.md)
 
 # GitHub Pages | Learning Markdown
+[View these instructions in PDF format](lesson1.pdf)
 <br>
 <br>
 
