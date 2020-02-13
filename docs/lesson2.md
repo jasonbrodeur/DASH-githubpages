@@ -6,6 +6,7 @@ title: Digging into versioning with GitHub Desktop
 
 
 # Digging into versioning with GitHub Desktop
+[View these instructions in PDF format](lesson2.pdf)
 <br>
 <br>
 
