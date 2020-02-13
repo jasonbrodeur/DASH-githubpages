@@ -54,14 +54,29 @@ In this step, we'll explore some of the functionality available in a GitHub repo
 - Explore with Jay the various Features (tabs) that are available within a repository
 - Open the Settings Tab. Follow along with Jay as he explains the various pages
 - On the (topmost) **Options** page, scroll down to the **GitHub Pages** section
-  - For **Source**, select **master branch /docs folder** (note you could also pick the *master branch* option)
+  - For **Source**, select `master branch /docs folder` (note you could also pick the *master branch* option)
   - Click **Choose a theme** to select a theme for your webpage
 - Congratulations, your website is now live. The link will be provided in the GitHub Pages section.
 - ... however, if you click it, you'll receive a 404 error. Now we need to create some content!
 
 ### Creating content | Customizing pages
+- Navigate to the **docs** folder of your repository
+  - Note that there is now a file named **_config.yml**. This is your configuration file, and it's written in a language called [YAML](https://en.wikipedia.org/wiki/YAML). 
 
 
+- Create index.md file 
+- Include front matter
+```
+plugins:
+  - jekyll-relative-links
+relative_links:
+  enabled: true
+  collections: true
+include:
+  - pagetwo.md
+
+title: Welcome to my webpage
+```
 
 ### Jekyll
 From jekyllrb.com
