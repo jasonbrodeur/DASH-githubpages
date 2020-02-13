@@ -57,7 +57,8 @@ In this step, you'll 'push' your local changes back up to your GitHub repository
 - Make a change to a file in the GitHub (remote) repository using the web editor. 
 
 ### Pull changes to the local directory
-- In GitHub Desktop, click the **Fetch origin** button. This will check the GitHub repository to see if any changes have been made 
+- In GitHub Desktop, click the **Fetch origin** button. This will check the GitHub repository to see if any changes have been made remotely.
+- 
 
 
 
