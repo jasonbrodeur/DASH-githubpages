@@ -27,7 +27,6 @@ If using a Windows or Mac, download and install [GitHub Desktop](https://desktop
 Follow along with the slides describing git and GitHub Desktop
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSjyUEk9jOYf-5aYJUT898qN1qxw7Wohn-kOoniaOgfy6GhPRpMB6abZJhIzAUnB0eh0NBa9N4Dh82f/embed?start=false&loop=false&delayms=30000" frameborder="0" width="640" height="389" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
-
 # Cloning, editing, pushing changes
 
 ## For Windows and Mac users
@@ -45,7 +44,22 @@ In this next step, you will 'clone' your existing GitHub repository to your loca
 
 ### Commit new changes
 - In GitHub Desktop, you should be shown the files that have been changed, and be able to view the specific changes. 
-- If you are comfortable with the changes, you are ready to 
+- If you are comfortable with the changes, you are ready to commit them.
+  - Provide a summary of the changes (or used the suggested text), and lengthier description, if desired.
+  - Click **Commit to master**. This commits your changes to your local repository. 
+  - If you continue to work on your local files, you will need to again commit changes.  
+
+### Push changes to GitHub (remote) repository
+In this step, you'll 'push' your local changes back up to your GitHub repository, so that both are synced. 
+- In GitHub Desktop, click the **Push origin** button
+
+### Make changes in the GitHub (remote) repository
+- Make a change to a file in the GitHub (remote) repository using the web editor. 
+
+### Pull changes to the local directory
+- In GitHub Desktop, click the **Fetch origin** button. This will check the GitHub repository to see if any changes have been made 
+
+
 
 ### Step 1.3: Do things in Openrefine!
 - Once you've cloned the repository, use the button on GitHub Desktop to view the repository/files in Explorer. 
