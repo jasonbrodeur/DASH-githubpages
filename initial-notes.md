@@ -1,5 +1,5 @@
 # Introduction
-
+https://www.smashingmagazine.com/2014/08/build-blog-jekyll-github-pages/
 # Pre-event prepartion
 
 ## Step 0.1: Install git version control software
