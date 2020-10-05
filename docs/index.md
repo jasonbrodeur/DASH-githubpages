@@ -14,3 +14,12 @@ Follow along with the [lesson plan](lesson1.md)
 Follow along with the [lesson plan](lesson2.md)
 <br>
 <br>
+<br>
+<br>
+
+
+Created and presented by Jay Brodeur, McMaster University Library, 2020.
+
+All content is made available under a Creative Commons 4.0 Attribution license. 
+
+
