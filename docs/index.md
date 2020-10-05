@@ -20,6 +20,6 @@ Follow along with the [lesson plan](lesson2.md)
 
 Created and presented by Jay Brodeur, McMaster University Library, 2020.
 
-All content is made available under a Creative Commons 4.0 Attribution license. 
+All content is made available under a GNU General Public License v3.0. 
 
 
