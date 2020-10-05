@@ -6,4 +6,4 @@ Material for the DASH workshop "Easy websites with GitHub Pages and Markdown"
 
 Created and presented by Jay Brodeur, McMaster University Library
 
-All content is made available under a Creative Commons 4.0 Attribution license. 
+All content is made available under a GNU General Public License v3.0.
