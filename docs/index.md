@@ -4,9 +4,7 @@ title: Easy websites with GitHub
 nav_order: 1
 ---
 
-<!--
-<img src="assets/img/dmds-voyant.png" alt="Workshop Title Slide" width="720">
--->
+<img src="assets/img/DASH-advert.png" alt="Workshop Title Slide" width="600">
 
 # Welcome to Easy websites with GitHub and GitHub Desktop. 
 
