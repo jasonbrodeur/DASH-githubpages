@@ -38,15 +38,3 @@ gh_edit_view_mode: "tree" # "tree" or "edit" if you want the user to jump into t
 plugins:
   - jekyll-remote-theme
   - jekyll-seo-tag
-
-
-
-#theme: jekyll-theme-midnight
-#plugins:
-#  - jekyll-relative-links
-#relative_links:
-#  enabled: true
-#  collections: true
-#include:
-#  - lesson1.md
-#  - lesson2.md
