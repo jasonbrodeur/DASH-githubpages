@@ -1,24 +1,33 @@
-# Workshop slides
+---
+layout: home
+title: Easy websites with GitHub
+nav_order: 1
+---
 
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSjyUEk9jOYf-5aYJUT898qN1qxw7Wohn-kOoniaOgfy6GhPRpMB6abZJhIzAUnB0eh0NBa9N4Dh82f/embed?start=false&loop=false&delayms=15000" frameborder="0" width="640" height="389" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-<br>
-[View slides in PDF format](slides.pdf)
-<br>
+<!--
+<img src="assets/img/dmds-voyant.png" alt="Workshop Title Slide" width="720">
+-->
 
-# Lesson 1: GitHub Pages | Learning Markdown
-Follow along with the [lesson plan](lesson1.md)
-<br>
-<br>
+# Welcome to Easy websites with GitHub and GitHub Desktop. 
 
-# Lesson 2: Digging into versioning with GitHub Desktop
-Follow along with the [lesson plan](lesson2.md)
-<br>
-<br>
-<br>
-<br>
+In this tutorial, you will learn how to use GitHub, GitHub Pages, markdown, and GitHub Desktop to create and manage websites with ease! 
+
+## Learning Objectives
+
+By the end of this tutorial, you will be able to: 
+- Create a GitHub repository (from scratch and by cloning/forking an existing one)
+- Create, edit, and manage versions of files in a GitHub repository
+- Describe the basics of versioning and versioning software; communicate their value
+- Explain the differences between git and GitHub, and detail how they work together
+- Use GitHub Desktop and git to sync files between your desktop/laptop and GitHub
+- Use Markdown to format text in a simple yet effective manner
+- Use GitHub Pages to create simple static web pages using jekyll
+- Identify where you can find more information to experiment and learn on your own
+
+Proceed to the [Preparation](preparation) page to get started.
 
 
-Created and presented by Jay Brodeur, McMaster University Library, 2020.
+Created and presented by Jay Brodeur, McMaster University, 2020.
 
 All content is made available under a GNU General Public License v3.0. 
 

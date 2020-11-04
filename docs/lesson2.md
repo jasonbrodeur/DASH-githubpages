@@ -1,39 +1,31 @@
 ---
-title: Digging into versioning with GitHub Desktop
+layout: default
+title: Lesson 2: git and GitHub Desktop
+nav_order: 4
 ---
 
-[BACK TO MAIN PAGE](index.md)
-
-
+<!--
 # Digging into versioning with GitHub Desktop
 [View these instructions in PDF format](lesson2.pdf)
 <br>
 <br>
+-->
 
-## 1. Install git and GitHub Desktop software
+## Lesson objectives 
+- Install git and GitHub Desktop software
+- Clone your GitHub repository to your local machine
+- Use GitHub Desktop to control versions on local changes
+- Push changes back to GitHub (and pull new changes back down)
+- Fork a repository
 
-### Install git version control software
-- Navigate to the [official git website](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) and follow the instructions to download and install for your operating system.
-  - For Windows, use [this download link](https://git-scm.com/download/win) and install using all of the default (recommended) options.
 
-### Create a GitHub account (if you don't have one)
-- Navigate to [Github](https://github.com) and sign up for an account if you don't already have one. 
-- After registering, sign in to your account.
-- (optional) Watch the short introductory video[What is GitHub?](https://www.youtube.com/watch?v=w3jLJU7DT5E).
+## 1. Introduction to git and GitHub Desktop
+Ensure that you have installed git and GitHub Desktop, as outlined in the [Preparation](preparation) page.
 
-### Install and configure GitHub Desktop
-**NOTE:** If you are a Linux user, GitHub Desktop will not work for you. Instead, you'll need to learn how to use git and git Bash. Separate instructions are provided below.
-
-If using a Windows or Mac, download and install [GitHub Desktop](https://desktop.github.com/)
-- More guidance can be found in guides from [GitHub](https://help.github.com/en/desktop/getting-started-with-github-desktop) and [TechRepublic](https://www.techrepublic.com/article/how-to-install-github-desktop/).
-- Sign into GitHub Desktop using your GitHub credentials
-- In the *Configure Git* page, enter the name and email address that you want associated with your changes
-- In File > Options > Advanced, set the Shell to Git Bash
-- (optional) Once configured, the main GitHub Desktop page will show any repositories that exist in your GitHub account. For those who use git already, you can add any local repositories that already exist on your machine.
-
-## 2. Introduction to git and GitHub Desktop
+<!--
 Follow along with the slides describing git and GitHub Desktop
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSjyUEk9jOYf-5aYJUT898qN1qxw7Wohn-kOoniaOgfy6GhPRpMB6abZJhIzAUnB0eh0NBa9N4Dh82f/embed?start=false&loop=false&delayms=30000" frameborder="0" width="640" height="389" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+-->
 
 ## 3A. Cloning, editing, pushing changes (For Windows and Mac users)
 
@@ -67,7 +59,7 @@ In this step, you'll 'push' your local changes back up to your GitHub repository
 - In GitHub Desktop, click the **Fetch origin** button. This will check the GitHub repository to see if any changes have been made remotely.
 - In GitHub Desktop, click the **Pull origin** button to sync remote changes to your local files. 
 
-### Advanced: Fork a partner's repository | Request a pull
+### (optional) Advanced: Fork a partner's repository | Request a pull
 One of the use cases for version control is that it allows multiple individuals to work on a project at the same time. Collaborators can work on a single 'branch', or (often) they choose to 'fork' it and work on separate branches (with the idea that these branches could be 'merged' later). 
 
 In this exercise, your task is to fork a partner's repository, make some changes locally, 'push' it to your forked repository, and then make a 'pull request' to merge the changes. 

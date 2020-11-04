@@ -1,40 +1,42 @@
 ---
-title: GitHub Pages | Learning Markdown
+layout: default
+title: Lesson 1: GitHub Pages and Markdown
+nav_order: 3
 ---
 
-[BACK TO MAIN PAGE](index.md)
-
+<!--
 # GitHub Pages | Learning Markdown
 [View these instructions in PDF format](lesson1.pdf)
 <br>
 <br>
+-->
 
-## 1. Introduction
+## Lesson objectives 
+- Create a GitHub repository
+- Add some content using Markdown
+- Turn that content into a static web page using GitHub Pages & jekyll
+- Customize the web pages 
+- Experiment with embedded html code
 
-Follow along with the [introductory slides](https://docs.google.com/presentation/d/e/2PACX-1vSjyUEk9jOYf-5aYJUT898qN1qxw7Wohn-kOoniaOgfy6GhPRpMB6abZJhIzAUnB0eh0NBa9N4Dh82f/pub?start=false&loop=false&delayms=60000). 
+## 1. Learning GitHub Pages
 
-Presentations slides
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSjyUEk9jOYf-5aYJUT898qN1qxw7Wohn-kOoniaOgfy6GhPRpMB6abZJhIzAUnB0eh0NBa9N4Dh82f/embed?start=false&loop=false&delayms=30000" frameborder="0" width="640" height="389" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-
-### Create a GitHub account
+### Login to your GitHub account
 - Navigate to [Github](https://github.com) and sign up for an account if you don't already have one. 
-- After registering, sign in to your account.
-
-## 2. Working with GitHub Pages
+- Sign in to your account.
 
 ### Create a new GitHub repository
 - From your GitHub main page, click on the green **New Repository** button. This is the repository (storage location) where the content of your website will be hosted. 
   - Provide a name for your repository. The name you enter will determine the URL of your repository.
     - i.e. ```https://github.com/<your-github-username>/<your-repo-name>```
-	- e.g. ```https://github.com/jasonbrodeur/DASH-githubpages```
+	- e.g. ```https://github.com/jasonbrodeur/test-pages```
 - Check the box to **Initialize this repository with a README**
 - Click the **Create repository** button
 - Your browser will now open to the top-level page of the repository. Your repository will contain one file: **README.md**. 
 
 ### Create a folder and a text file
-In this task, you'll create a folder that we'll need to initiate the webpage, and you'll learn how to create and edit files. 
+In this task, you'll create a folder that we'll need to initiate the web page, and you'll learn how to create and edit files. 
 
-We want to create a folder named ```docs``` in the top level of the repository. This is where the webpage content will live. We also want to create a file in this folder called ```index.md```. This will be the home page for your website.
+We want to create a folder named ```docs``` in the top level of the repository. This is where the web page content will live. We also want to create a file in this folder called ```index.md```. This will be the home page for your website.
 - In the top-level repository page, click **Create new file**
   - NOTE1: To create a file, simply enter the desired name and file extension. 
   - NOTE2: To create a folder, you need to add a trailing slash (/) to the name, and you need to [create a file within the folder](https://github.com/KirstieJane/STEMMRoleModels/wiki/Creating-new-folders-in-GitHub-repository-via-the-browser), since empty folders aren't saved. You can always delete this file later.
@@ -50,25 +52,24 @@ We want to create a folder named ```docs``` in the top level of the repository. 
 	  - (optional) Add a description, if desired
 	- Click the **Commit changes** box to finalize your commit. Your changes will be represented in the file. 
 
-### Viewing changes
+### View your changes
 - In the **index.md** file viewing page, explore the *Blame* and *History* buttons to better understand how GitHub keeps track of file changes. 
 
-
-## 3. Exploring Features and Settings | Preparing the webpage
+## 2. Explore Features and Settings | Prepare the web page
 In this step, we'll explore some of the functionality available in a GitHub repository and show you how to get started with [GitHub Pages](https://help.github.com/en/github/working-with-github-pages/about-github-pages)
 - Ensure that you've created the ```docs``` folder and the ```index.md``` file, as outlined in the previous step.
 - Explore with Jay the various Features (tabs) that are available within a repository
 - Open the Settings Tab. Follow along with Jay as he explains the various pages
 - On the (topmost) **Options** page, scroll down to the **GitHub Pages** section
   - For **Source**, select **master branch /docs folder** (note you could also pick the *master branch* option, but not for this example.)
-  - Click **Choose a theme** to select a theme for your webpage
+  - Click **Choose a theme** to select a theme for your web page
 - Congratulations, your website is ready. The link will be provided in the GitHub Pages section.
   - You may initially receive a 404 error, but after a minute, your website will appear with the content from ```index.md```
-Remember: By default, GitHub Pages expects at least one file in the ```docs``` folder named ```index.md```. This is the main (home) page for the webpage.
-**Now, we need to add some content to your webpage!**
+Remember: By default, GitHub Pages expects at least one file in the ```docs``` folder named ```index.md```. This is the main (home) page for the web page.
+**Now, we need to add some content to your web page!**
 
-## 4. Creating content with Markdown
-One of the really nice things about GitHub and GitHub Pages is that you can use Markdown to format text on a webpage without the use (or knowledge!) of html coding. This makes it really easy to create content. In this section, you'll learn a bit more about Markdown and how to use it to create formatted text. 
+## 3. Create content with Markdown
+One of the really nice things about GitHub and GitHub Pages is that you can use Markdown to format text on a web page without the use (or knowledge!) of html coding. This makes it really easy to create content. In this section, you'll learn a bit more about Markdown and how to use it to create formatted text. 
 
 ### What is Markdown? 
 Borrowed shamelessly from Github's [Mastering Markdown](https://guides.github.com/features/mastering-markdown/) page: 
@@ -82,6 +83,7 @@ Using the Github editor, open ```index.md``` for editing and add some content to
 ```
 ---
 title: <enter your title here>
+layout: default
 ---
 ```
 
@@ -108,7 +110,7 @@ More information and references for Markdown:
 ### Create a second page
 - Create another markdown page in the ```docs``` folder. Name it as you wish, but ensure that it ends in ```.md```. Add a title and other elements as done earlier. 
 
-## 5. Customizing pages | What is jekyll?
+## 4. Customize pages | What is jekyll?
 You may have noticed by now that there is another file (```config.yml```) in your ```docs``` folder that you didn't create or put there. This is your configuration file, and it's written in a language called [YAML](https://en.wikipedia.org/wiki/YAML). The ```config.yml``` file was created at the time that you turned on GitHub pages, and it provides instructions to a static site generator software called [jekyll](https://jekyllrb.com/). GitHub pages uses jekyll in the background to convert your Markdown file(s) to formatted html to display as a webpages. 
 
 There is ***a lot*** that you can do with jekyll (within GitHub pages and as a standalone application on your computer) to generate customized webpages. While only the theme information is set in your file initially, there are many ways that you can [customize](https://help.github.com/en/github/working-with-github-pages/about-github-pages-and-jekyll#default-plugins)  it. Here, we'll make a few simple ones:
@@ -124,24 +126,24 @@ relative_links:
 include:
   - <the name of your second page>.md
 
-title: <your webpage title>
-description: <description of your webpage> 
+title: <your web page title>
+description: <description of your web page> 
 ```
 
 What this does:
 - The ```plugins``` and ```relative-links``` lines make it easier for us to refer to files within our repository. 
 - The include statement is used to indicate to jekyll which other Markdown pages should be converted to html pages. 
-- The title and description statements allow you to override the repository name and description in the webpage title.
+- The title and description statements allow you to override the repository name and description in the web page title.
  
 ### More about Jekyll
-From jekyllrb.com
+*From [jekyllrb.com](https://jekyllrb.com/):*
 >“Jekyll is a static site generator. You give it text written in your favorite markup language and it uses layouts to create a static website. You can tweak how you want the site URLs to look, what data gets displayed on the site, and more.”
 
 GitHub pages uses jekyll to turn your markdown files (hosted in your GitHub repo) into html files and presents them on your desired website. 
 
-Jekyll [webpage](https://jekyllrb.com/) and Jekyll project [on GitHub](https://github.com/jekyll/jekyll).
+Jekyll [web page](https://jekyllrb.com/) and Jekyll project [on GitHub](https://github.com/jekyll/jekyll).
 
-## 6. Doing more
+## 5. Doing more
 
 ### Embedding web content 
 The nice thing about jekyll is that it doesn't just accept Markdown--it also accepts html, meaning that you can insert things like embed codes to insert content.
@@ -151,3 +153,5 @@ The nice thing about jekyll is that it doesn't just accept Markdown--it also acc
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSjyUEk9jOYf-5aYJUT898qN1qxw7Wohn-kOoniaOgfy6GhPRpMB6abZJhIzAUnB0eh0NBa9N4Dh82f/embed?start=false&loop=false&delayms=15000" frameborder="0" width="640" height="389" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 ```
 
+## 6. Next Steps 
+Finished? Navigate to [Lesson 2](lesson2) to learn how to use GitHub Desktop and git to sync files between your desktop/laptop and your GitHub repository.
