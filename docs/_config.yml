@@ -1,19 +1,12 @@
 title: Easy websites with GitHub
+description: Created by Jay Brodeur. Brought to you by the Sherman Centre for Digital Scholarship.
+
 remote_theme: scds/just-the-docs
 github_repo_url: "https://scds.github.io/intro-github-pages/"
+color_scheme: mcmaster
+# logo: "https://github.com/scds/intro-voyant/blob/main/assets/img/dmds-voyant.png?raw=true"
 
 
-#theme: jekyll-theme-midnight
-#plugins:
-#  - jekyll-relative-links
-#relative_links:
-#  enabled: true
-#  collections: true
-#include:
-#  - lesson1.md
-#  - lesson2.md
-
-description: Created by Jay Brodeur. Brought to you by the Sherman Centre for Digital Scholarship.
 
 # Heading anchor links appear on hover over h1-h6 tags in page content
 # allowing users to deep link to a particular heading on a page.
@@ -45,3 +38,15 @@ gh_edit_view_mode: "tree" # "tree" or "edit" if you want the user to jump into t
 plugins:
   - jekyll-remote-theme
   - jekyll-seo-tag
+
+
+
+#theme: jekyll-theme-midnight
+#plugins:
+#  - jekyll-relative-links
+#relative_links:
+#  enabled: true
+#  collections: true
+#include:
+#  - lesson1.md
+#  - lesson2.md
