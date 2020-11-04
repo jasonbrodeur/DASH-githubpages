@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Lesson 1: GitHub Pages and Markdown
+title: Lesson 1 - GitHub Pages and Markdown
 nav_order: 3
 ---
 

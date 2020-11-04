@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Lesson 2: git and GitHub Desktop
+title: Lesson 2 - git and GitHub Desktop
 nav_order: 4
 ---
 
